@@ -22,4 +22,10 @@ class Patient
     end
   end 
   
+  def doctors
+    self.appointments.map do |appt|
+      appt.doctor 
+    end 
+  end
+  
 end
